@@ -1,18 +1,31 @@
 const espacio = " ";
-let nombreingresado = prompt("¡Bienvenidx a VivíRG! por favor ingresá tu nombre:");
+let nombreingresado = prompt("Por favor ingresá tu nombre:");
+
+class Operador{
+    constructor (nombre, bienvenida){
+        this.nombre = nombre;
+        this.bienvenida = bienvenida;
+    }
+    hablar(){
+        alert("¡Hola soy tu " + this.nombre + espacio + this.bienvenida);
+    }
+}
+
+const persona1 = new Operador("operardorx de Viví RG!","te doy la bienvenida a VivíRG.");
+persona1.hablar();
 
 if (nombreingresado) {
-    alert("¡Hola," + espacio + nombreingresado + "! Te damos la bienvenida a VivíRG. Aquí vas a poder consultar sobre todo lo que necesites para empezar tu nueva vida en Rio Grande. Esperamos que te sea de utilidad.")
+    alert(nombreingresado + "," + espacio + "aquí vas a poder consultar sobre todo lo que necesites para empezar tu nueva vida en Rio Grande. Esperamos que te sea de utilidad.")
 } else {
     alert("No ingresaste un nombre, por favor volvé a intentarlo.");
     nombreingresado = prompt("¡Bienvenidx a VivíRG! por favor ingresá tu nombre:");
     if (nombreingresado) {
-        alert("¡Hola," + espacio + nombreingresado + "! Te damos la bienvenida a VivíRG. Aquí vas a poder consultar sobre todo lo que necesites para empezar tu nueva vida en Rio Grande. Esperamos que te sea de utilidad.")
+        alert(nombreingresado + "," + espacio + "aquí vas a poder consultar sobre todo lo que necesites para empezar tu nueva vida en Rio Grande. Esperamos que te sea de utilidad.")
     } else {
         alert("No ingresaste un nombre, por favor volvé a intentarlo.");
         nombreingresado = prompt("¡Bienvenidx a VivíRG! por favor ingresá tu nombre:");
         if (nombreingresado) {
-            alert("¡Hola," + espacio + nombreingresado + "! Te damos la bienvenida a VivíRG. Aquí vas a poder consultar sobre todo lo que necesites para empezar tu nueva vida en Rio Grande. Esperamos que te sea de utilidad.")
+            alert(nombreingresado + "," + espacio + "aquí vas a poder consultar sobre todo lo que necesites para empezar tu nueva vida en Rio Grande. Esperamos que te sea de utilidad.")
         } else {
             alert("No ingresaste un nombre, por favor volvé a intentarlo.");
             nombreingresado = prompt("¡Bienvenidx a VivíRG! por favor ingresá tu nombre:");
@@ -20,7 +33,6 @@ if (nombreingresado) {
     }
 }
 
-// Acá suponemos que va un ciclo y no supimos aplicarlos, por eso está planteado asi.
-// De esta forma hay sólo 4 intentos para ingresar el nombre, pero te deja ingresar igual luego del 4to intento.
-// La idea sería que no te deje ingresar a la página hasta que ingreses un nombre. 
+//Hola profes, pudimos implementar objetos, funciones, propiedades, métodos y clases 
+//pero a la hora de implementar invocación de objeto cuando el usuario realiza una acción y arrays, no supimos resolverlo.
 
